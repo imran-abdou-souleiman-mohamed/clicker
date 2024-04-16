@@ -43,7 +43,18 @@ function scoreClick3() {
 
 
 /* card pour ouvrir la boutique */
-document.getElementById('shop').addEventListener('click', function() {
-    // Afficher la carte de burger lorsque le bouton est cliqué
-    document.getElementById('burgerCard').classList.remove('hidden');
+var shopButton = document.getElementById('shop');
+var burgerCard = document.getElementById('burgerCard');
+
+shopButton.addEventListener('click', function() {
+    // Vérifier si la carte du burger est actuellement visible
+    var isVisible = !burgerCard.classList.contains('hidden');
+    
+    // Basculer la visibilité de la carte du burger
+    if (isVisible) {
+        burgerCard.classList.add('hidden'); // Cacher la carte du burger
+    } else {
+        burgerCard.classList.remove('hidden'); // Afficher la carte du burger
+    }
 });
+
