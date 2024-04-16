@@ -1,13 +1,51 @@
-body{
-   margin: 0;
-   padding: 0;
-   background-image: url(/images/anime_landscape_4k_wallpaper_by_cyberxyt_dgctdnb-414w-2x.jpg);
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   height: 100vh;
+*{
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/konoha.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden; /* Add this line */
+}
+
 
 img{
     display: none;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+}
+
+
+
+.card{
+    position: relative;
+}
+
+.content{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#shop{
+    
+   border-radius: 44% 56% 29% 71% / 50% 36% 64% 50% ; 
+   width: 200px;
+   height: 200px; 
+    
+}
+
+#shop:hover{
+    background-color: blueviolet;
 }
