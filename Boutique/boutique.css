@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-details {
+    padding: 15px;
+}
+
+.card-details h2 {
+    margin-top: 0;
+}
+
+.card-details p {
+    margin-bottom: 10px;
+}
+
+.card-details .price {
+    font-weight: bold;
+    color: #008000; /* Couleur du prix */
+}
+
+.card-details button {
+    padding: 10px 15px;
+    background-color: #008000; /* Couleur du bouton */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-details button:hover {
+    background-color: #006400; /* Couleur du bouton au survol */
+}

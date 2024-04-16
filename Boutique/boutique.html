@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="decors.css">
+    <link rel="stylesheet" href="boutique.css">
     <title>Document</title>
 </head>
 <body>
-
-
-    <button onclick="buyItem('buf')">Buy Buff?
-        <span id="bufs">0</span> <br>
-        <span id="bufCost">50</span>
-    </button>
-
-
+    <div class="card">
+        <img src="images/fond-decran-boutique.png" alt="Image de la carte">
+        <div class="card-details">
+            <div class="container">
+                <button onclick="buyItem('buf')">
+                    <img src="images/buf_compagnie_logo.jpg" alt="">
+                    <span id="bufs"></span> <br>
+                    <span id="bufCost">50</span>
+                </button>
+            </div>
+      </div>  
+    </div>
+    
     <script src="boutique.js"></script>
 </body>
 </html>
