@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="boutique.css">
     <title>Boutique</title>
 </head>
 <body>
+    <div class="content">
+        <button id="shop">Shop <i class="fas fa-cart-shopping fa-bounce"></i></button>
+    </div>
+    <div id="burgerCard" class="hidden">
+        <div class="container">
+            <button onclick="buyItem('buf')">
+                <img src="images/buf_compagnie_logo.jpg" alt="buy item">
+                <span id="bufs"></span> <br>
+                <span id="bufCost">50</span>
+            </button>
+        </div>
+    </div>
 <div class="container">
     <button onclick="buyItem('buf')">
-        <img src="images/buf_compagnie_logo.jpg" alt="">
+        <img src="images/buf_compagnie_logo.jpg" alt="buy item">
         <span id="bufs"></span> <br>
         <span id="bufCost">50</span>
     </button>

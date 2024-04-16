@@ -1,8 +1,6 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 body {
     background-image: url('images/konoha.jpg');
@@ -10,3 +8,12 @@ body {
     background-repeat: no-repeat;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.hidden {
+    display: none;
+}

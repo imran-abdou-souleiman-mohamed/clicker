@@ -40,3 +40,10 @@ function scoreClick3() {
     points += 3;
     document.getElementById("score").innerHTML = points; // Update points display
 }
+
+
+/* card pour ouvrir la boutique */
+document.getElementById('shop').addEventListener('click', function() {
+    // Afficher la carte de burger lorsque le bouton est cliqué
+    document.getElementById('burgerCard').classList.remove('hidden');
+});
