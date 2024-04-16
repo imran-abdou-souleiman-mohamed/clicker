@@ -77,6 +77,7 @@ img{
 
 .container1 .card1:hover {
     height: 400px;
+    background-color: burlywood;
 }
 
 .container1 .card1 .imgBx {
@@ -119,10 +120,25 @@ img{
 .container1 .card1 .textOverlay p {
     font-size: 1em;
 }
+.score-container {
+    position: absolute;
+    top: 50px; /* Adjust the top position */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
 
-#points{
-    border-radius:  36% 64% 44% 56% / 14% 59% 41% 86%  ; 
+#points {
+    border-radius: 36% 64% 44% 56% / 14% 59% 41% 86%;
     width: 100px;
-    height: 100px; 
-     
+    height: 100px;
+}
+
+#points:hover{
+    background-color: brown;
+}
+
+#score {
+    margin-left: 10px; /* Adjust the margin as needed */
 }
