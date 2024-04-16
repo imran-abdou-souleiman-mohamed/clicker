@@ -17,3 +17,28 @@ body {
 .hidden {
     display: none;
 }
+.burgerCard {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Largeur de la carte */
+    background-color: #1e3a56; /* Couleur de fond bleu foncé */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre */
+    opacity: 0; /* Début invisible */
+    transition: opacity 0.5s ease; /* Animation d'opacité */
+}
+
+.burgerCard.visible {
+    opacity: 1; /* Rend visible */
+}
+
+.card {
+    color: white; /* Couleur du texte */
+}
+
+.container {
+    text-align: center; /* Centrer le contenu */
+}

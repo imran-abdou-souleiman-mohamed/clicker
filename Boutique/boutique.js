@@ -42,7 +42,11 @@ function scoreClick3() {
 }
 
 
-/* card pour ouvrir la boutique */
+
+
+
+
+/* bouton shop pour ouvrir la boutique */
 var shopButton = document.getElementById('shop');
 var burgerCard = document.getElementById('burgerCard');
 
@@ -56,5 +60,15 @@ shopButton.addEventListener('click', function() {
     } else {
         burgerCard.classList.remove('hidden'); // Afficher la carte du burger
     }
+});
+
+/* delai de pop de la card */
+var shopButton = document.getElementById('shop');
+var burgerCard = document.getElementById('burgerCard');
+
+shopButton.addEventListener('click', function() {
+    setTimeout(function() {
+        burgerCard.classList.toggle('visible');
+    }, 200); // Délai de 200ms avant d'afficher la carte
 });
 
