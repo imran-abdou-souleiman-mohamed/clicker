@@ -1,0 +1,13 @@
+body{
+   margin: 0;
+   padding: 0;
+   background-image: url(/images/anime_landscape_4k_wallpaper_by_cyberxyt_dgctdnb-414w-2x.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 100vh;
+}
+
+img{
+    display: none;
+}
