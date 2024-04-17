@@ -3,17 +3,11 @@
     padding: 0;
 }
 body {
-    background-image: url('images/konoha.jpg');
+    background-image: url('images/naruto.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
 .hidden {
     display: none;
 }
@@ -36,9 +30,24 @@ body {
 }
 
 .card {
-    color: white; /* Couleur du texte */
+    color: rgb(255, 255, 255); /* Couleur du texte */
+    position: relative;
 }
 
 .container {
-    text-align: center; /* Centrer le contenu */
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 20px;
+}
+
+
+#pointsDisplay {
+    position: relative;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
 }

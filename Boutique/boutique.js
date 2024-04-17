@@ -72,3 +72,26 @@ shopButton.addEventListener('click', function() {
     }, 200); // Délai de 200ms avant d'afficher la carte
 });
 
+
+
+/* cumule de points */
+var points = 0;
+var autoEarnInterval;
+
+function updatePointsDisplay() {
+    document.getElementById("pointsDisplay").innerHTML = "Points: " + points;
+}
+
+function startAutoEarn() {
+    if (!autoEarnInterval) {
+        autoEarnInterval = setInterval(function() {
+            points++;
+            updatePointsDisplay();
+        }, 1000); // Une pièce toutes les 1000 millisecondes (1 seconde)
+    }
+}
+
+// Appel de la fonction pour démarrer automatiquement le gain de pièces au chargement de la page
+startAutoEarn();
+
+
