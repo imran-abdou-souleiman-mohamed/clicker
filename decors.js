@@ -1,28 +1,38 @@
-var points = 0;
-var cursors = 0;
+var points = 0; 
+var pointsPerClick = 1; 
+var cursors = 0; 
+var cursorPrice = 10; 
 
-// Function to update the points display
-function updatePointsDisplay() {
-    document.getElementById("score").innerHTML = points;
-}
 
-// Function to handle clicking the button and updating points
 function scoreClick1() {
-    points++;
-    updatePointsDisplay(); // Update points display
-    saveClickCount(); // Save click count to local storage
+    points += pointsPerClick; 
+    document.getElementById("score").innerHTML = points; 
+    saveClickCount(); 
 }
 
-// Function to save the click count to local storage
+
 function saveClickCount() {
-    localStorage.setItem("points", points);
+    localStorage.setItem("points", points); 
 }
 
-// Function to retrieve the click count from local storage on page load
-window.onload = function() {
+
+function initializeGame() {
+   
     var savedPoints = localStorage.getItem("points");
-    if (savedPoints !== null) {
-        points = parseInt(savedPoints);
-        updatePointsDisplay(); // Update points display with saved value
+    if (savedPoints) {
+        points = parseInt(savedPoints); 
     }
-};
+    document.getElementById("score").innerHTML = points; 
+
+    
+    setInterval(function() {
+        pointsPerClick *= 3; 
+    }, 60000); 
+
+    
+    setInterval(function() {
+        cursorPrice *= 10; 
+    }, 3600000);
+}
+
+window.onload = initializeGame;
