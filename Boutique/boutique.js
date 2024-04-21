@@ -95,3 +95,20 @@ function startAutoEarn() {
 startAutoEarn();
 
 
+
+/* bouton pour litem augemention de prix */
+
+
+
+
+
+
+
+// Ajoutez ce code après les autres fonctions dans votre fichier JavaScript
+
+var getPointButton = document.getElementById('getPoint');
+
+getPointButton.addEventListener('click', function() {
+    points++; // Incrémente le nombre de points
+    updatePointsDisplay(); // Met à jour l'affichage des points
+});
