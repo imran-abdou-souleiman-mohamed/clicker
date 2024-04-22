@@ -112,3 +112,6 @@ getPointButton.addEventListener('click', function() {
     points++; // Incrémente le nombre de points
     updatePointsDisplay(); // Met à jour l'affichage des points
 });
+
+
+
