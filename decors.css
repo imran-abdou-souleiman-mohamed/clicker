@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/konoha.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden; /* Add this line */
+}
+
+
+img{
+    display: none;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+}
+
+
+
+.card{
+    position: relative;
+}
+
+.content{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#shop{
+    
+   border-radius: 44% 56% 29% 71% / 50% 36% 64% 50% ; 
+   width: 200px;
+   height: 200px; 
+    
+}
+
+#shop:hover{
+    background-color: blueviolet;
+}
+
+
+
+
+
+.container1 {
+    position: relative;
+    width: fit-content; /* Adjusted */
+    height: fit-content; /* Adjusted */
+    display: flex;
+    flex-direction: column; /* Adjusted */
+    align-items: flex-start; /* Adjusted */
+    justify-content: flex-start; /* Adjusted */
+    margin-top: 10px;
+}
+
+
+.container1 .card1 {
+    width: 250px;
+    height: 200px;
+    background: #ffffffae;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+}
+
+.container1 .card1:hover {
+    height: 400px;
+    background-color: burlywood;
+}
+
+.container1 .card1 .imgBx {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.container1 .card1 .imgBx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.container1 .card1 .textOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s;
+}
+
+.container1 .card1:hover .textOverlay {
+    opacity: 1; 
+}
+
+.container1 .card1 .textOverlay h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.container1 .card1 .textOverlay p {
+    font-size: 1em;
+}
+.score-container {
+    position: absolute;
+    top: 50px; /* Adjust the top position */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+#points {
+    border-radius: 36% 64% 44% 56% / 14% 59% 41% 86%;
+    width: 100px;
+    height: 100px;
+}
+
+#points:hover{
+    background-color: brown;
+}
+
+#score {
+    margin-left: 10px; /* Adjust the margin as needed */
+}
