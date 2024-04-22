@@ -20,9 +20,6 @@ function initializeGame() {
     }
     document.getElementById("score").innerHTML = points;
 
-    setInterval(function() {
-        pointsPerClick *= 3;
-    }, 60000);
 
     setInterval(function() {
         cursorPrice *= 10;
