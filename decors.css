@@ -14,10 +14,10 @@ body {
     overflow: hidden; /* Add this line */
 }
 
-
-img{
+img:not(#image) {
     display: none;
 }
+
 
 .container {
     position: relative;

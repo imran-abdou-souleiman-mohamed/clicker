@@ -1,8 +1,0 @@
-function changeImage() {
-    var image = document.getElementById("image");
-    if (image.src === "https://via.placeholder.com/200") {
-        image.src = "https://via.placeholder.com/300"; // Changer l'URL de l'image
-    } else {
-        image.src = "https://via.placeholder.com/200"; // Revenir à l'URL d'origine
-    }
-}
