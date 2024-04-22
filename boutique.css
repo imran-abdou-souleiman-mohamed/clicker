@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('images/naruto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hidden {
+    display: none;
+}
+.burgerCard {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Largeur de la carte */
+    background-color: #1e3a56; /* Couleur de fond bleu foncé */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre */
+    opacity: 0; /* Début invisible */
+    transition: opacity 0.5s ease; /* Animation d'opacité */
+}
+
+.burgerCard.visible {
+    opacity: 1; /* Rend visible */
+}
+
+.card {
+    color: rgb(255, 255, 255); /* Couleur du texte */
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 20px;
+}
+
+
+#pointsDisplay {
+    position: relative;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.itemSection {
+    margin-top: 10px; 
+}
+
+
+
+/* accueil bouton */
+
+.bouton-accueil {
+    background-color: #007bff; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur au survol */
+    text-decoration: none; /* Pas de soulignement */
+    font-size: 16px; /* Taille de la police */
+}
+
+/* Style du bouton au survol */
+.bouton-accueil:hover {
+    background-color: #0056b3; /* Nouvelle couleur de fond au survol */
+}
+
+/* shop design*/
+.content {
+    text-align: right; /* Alignement à droite */
+}
+
+#shop {
+    background-color: #007bff; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur */
+}
+
+#shop:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+}
