@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="boutique.css">
+    <title>Boutique</title>
+</head>
+<body>
+    <button class="bouton-accueil" onclick="window.location.href='decors.html';">Accueil</button>
+    
+    <div class="content">
+        <a href="boutique.html"><button id="shop">Shop <i class="fas fa-cart-shopping fa-bounce"></i></button></a>
+     </div>
+    <div id="burgerCard" class="burgerCard hidden">
+        <div class="card">
+            <div id="pointsDisplay"> 0 </div>
+                <div class="container">
+                    <button onclick="buyItem('buf')">
+                        <span id="bufs"></span> <br>
+                        <span id="bufCost"><i class="fa-brands fa-buffer fa-bounce"></i> 50 </span>
+                    </button>
+                </div>  
+            </div>
+            <br>
+            <button id="getPoint">Get Point</button>
+        </div>
+    </div>
+    
+    
+
+    <script src="boutique.js"></script>
+</body>
+</html>
