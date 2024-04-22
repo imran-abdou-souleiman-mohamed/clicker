@@ -115,3 +115,36 @@ getPointButton.addEventListener('click', function() {
 
 
 
+/* Bonus */
+var bonusMultiplier = 1; // Variable pour suivre le nombre de bonus achetés
+
+function updatePointsDisplay() {
+    document.getElementById("pointsDisplay").innerHTML = "Points: " + points;
+}
+
+function startAutoEarn() {
+    if (!autoEarnInterval) {
+        autoEarnInterval = setInterval(function() {
+            points += (1 + bufs * bonusMultiplier); // Points gagnés par seconde avec le bonus
+            updatePointsDisplay(); // Met à jour l'affichage des points
+        }, 1000); // Une pièce toutes les 1000 millisecondes (1 seconde)
+    }
+}
+
+// Appel de la fonction pour démarrer automatiquement le gain de pièces au chargement de la page
+startAutoEarn();
+
+function buyItem(itemType) {
+    if (itemType === 'bonus') {
+        var bonusCost = 20; // Coût de base de l'élément bonus
+        if (points >= bonusCost) {
+            points -= bonusCost; // Soustrait le coût de l'élément bonus aux points
+            bufs++; // Augmente le nombre de bonus
+            bonusMultiplier += 3; // Augmente le multiplicateur de points
+            updatePointsDisplay(); // Met à jour l'affichage des points
+            document.getElementById("bufs").innerHTML = bufs; // Met à jour l'affichage du nombre de bonus
+        } else {
+            alert("Vous n'avez pas assez de points!");
+        }
+    }
+}
